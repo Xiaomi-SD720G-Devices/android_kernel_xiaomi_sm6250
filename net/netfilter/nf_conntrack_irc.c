@@ -244,6 +244,7 @@ static int help(struct sk_buff *skb, unsigned int protoff,
 	struct tcphdr _tcph;
 	const char *data_limit;
 	char *data, *ib_ptr, *for_print;
+	char *nick_end;
 	int dir = CTINFO2DIR(ctinfo);
 	struct nf_conntrack_expect *exp;
 	struct nf_conntrack_tuple *tuple;
